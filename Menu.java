@@ -6,11 +6,11 @@ public class Menu {
         {"French Fries", "$2.05"}
     };
     int a, b;
-    for(a=0; a < 5; a++) {
+    for(a=0; a < 3; a++) {
         for(b=0; b < 2; b++)
             System.out.print(food[a][b] + " ");
         System.out.println();
         System.out.println();
-        }   
+        }
     }
 }

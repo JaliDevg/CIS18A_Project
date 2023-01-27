@@ -1,16 +1,17 @@
 class ItemsnPrice {
 double price;
 String item;
-    double Food() {
-        String = "" + "-";
-        double price *= .075;
-        
+    public double Food(double price, String item) {
+        item = "" + "-";
+        price = price * .075;
+        return item;
+        //Fix
     }
 }
 class ItemPrice {
     public static void main(String args[]) {
-    Items chsburger = new Items();   
-    chsburger.Food() = 4.50;
-    System.out.println(Food.chsburger);
+    ItemsnPrice chsburger = new ItemsnPrice();   
+    chsburger.item = "Cheeseburger";
+    System.out.println(chsburger.item);
     }
 }

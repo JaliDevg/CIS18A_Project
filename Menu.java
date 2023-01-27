@@ -1,4 +1,4 @@
-public class Test {
+public class Menu {
     public static void main(String args[]) {
     String food[][] = {
         {"Cheeseburger", "$5.50"},
@@ -6,11 +6,11 @@ public class Test {
         {"French Fries", "$2.05"}
     };
     int a, b;
-    for(a=0; a < 3; a++) {
+    for(a=0; a < 5; a++) {
         for(b=0; b < 2; b++)
             System.out.print(food[a][b] + " ");
-        System.out.println(); 
         System.out.println();
-        }    
+        System.out.println();
+        }   
     }
 }

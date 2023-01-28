@@ -20,9 +20,9 @@ Monday - Saturday: 11 a.m. - 10 p.m.
 <sub>$10.00</sub>
 - Chicken Taco 🌮
 <sub>$4.25</sub>
-- 12 inch Pepperoni Pizza 🍕
+- 12 Inch Pepperoni Pizza 🍕
 <sub>$12.50</sub>
-- 10 pieces of Southern Fried Jumbo Shrimp 🍤
+- 10 Pieces of Southern Fried Jumbo Shrimp 🍤
 <sub>$10.50</sub>
 - Fish and Chips 🐟 🥔
 <sub>$11.50</sub>

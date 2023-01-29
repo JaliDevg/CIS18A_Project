@@ -1,9 +1,17 @@
 # CIS18A-Project: "Regular Restaurant" 
 > *BY: Javier Delgado and Liam Graham*
 > (Prompt #1)
-### Objective:
+
+## Objective:
 The purpose of this project is to allow the customer to select a food item from the menu and delivery to desired address with a displayed summary.
 
+## Table of Contents:
+- [Restaurant Logo](###-Restaurant-Logo:)
+- [Business Hours](###-Business-Hours:)
+- [Menu](###-Menu:)
+
+
+### Restaurant Logo:
 ![image](https://user-images.githubusercontent.com/122196793/214783335-47bbf8da-38db-409a-a52f-56c4271759b7.png)
 
 ### Business Hours:

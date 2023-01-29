@@ -27,6 +27,12 @@ Monday - Saturday: 11 a.m. - 10 p.m.
 - Fish and Chips 🐟 🥔
 <sub>$11.50</sub>
 
+### Running the Code:
+```bash
+javac Main.java
+java Main
+```
+
 ### Documentation:
 - Self Refection: https://docs.google.com/document/d/19Y9HJbnN2-79MyezEdDhqPXnoPXEBk6tU_4KpBtKQF0/edit 
 - Pseudocode: https://docs.google.com/document/d/1NJhA5vS_7trsgj5_Brd_sQV5NERZ2sulxQeJGaa8DHA/edit 

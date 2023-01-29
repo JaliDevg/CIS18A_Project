@@ -28,7 +28,7 @@ Monday - Saturday: 11 a.m. - 10 p.m.
 <sub>$11.50</sub>
 
 ### Running the Code:
-```bash
+```java
 javac Main.java
 java Main
 ```

@@ -28,6 +28,8 @@ Monday - Saturday: 11 a.m. - 10 p.m.
 <sub>$11.50</sub>
 
 ### Running the Code:
+Open files into a text editor or an IDE.
+Type into terminal:
 ```java
 javac Main.java
 java Main

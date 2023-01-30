@@ -13,15 +13,33 @@ class Slct {
         USelection pepPizza = new USelection();
         USelection sfjShrimp = new USelection();
         USelection fhChip = new USelection();
-
-    //Cheeseburger Variables | Select | Print
+    String i;
+    //Items Variables
+        //Cheeseburger
     chsBurger.item = "Cheeseburger";
     chsBurger.price = "$5.50";
-    if (System.in.read(chsBurger.item)) {
-        System.out.print(chsBurger.item);
-        System.out.println(chsBurger.price);
+        //Hot Dog
+    htDg.item = "Hot Dog";
+    htDg.price = "$4.00";
+        //French Fries
+    fF.item = "French Fries";
+    fF.price = "$5.50";
+    switch(i) {
+        case 0:
+            if ((String) System.in.read(chsBurger.item)) {
+            System.out.print(chsBurger.item);
+            System.out.println(chsBurger.price);
+            }
+            break;
+        case 1:
+            if ((String) System.in.read(htDg.item)) {
+            System.out.print(chsBurger.item);
+            System.out.println(chsBurger.price);
+            }
+            break;
+
     }
+    
     // Refer to Imput Char example chapter 3 '?' and Aidan's code
-    // Add switch statement
     }
 }

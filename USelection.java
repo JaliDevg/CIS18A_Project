@@ -22,5 +22,6 @@ class Slct {
         System.out.println(chsBurger.price);
     }
     // Refer to Imput Char example chapter 3 '?' and Aidan's code
+    // Add switch statement
     }
 }

@@ -3,6 +3,7 @@ import foodselect.*;
 public class FoodSummary {
     public void Summary() {
         foodselect.FoodOrder printback = new FoodOrder();
+        printback.item;
         System.out.println("Order Summary:");
         //Items Variables
             //Cheeseburger

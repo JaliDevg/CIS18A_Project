@@ -1,40 +1,41 @@
-public class USelection {
+public class Order {
     //Constructors
     String price;
     String item;
-    int num;
+    private int num;
     void print() throws java.io.IOException {
+        num = (int )System.in.read();
         if ((int) System.in.read() == num) {
-            System.out.println("Order:");
+            System.out.print("Added: " + item);
         }
     }    
 }
-class Slct extends USelection{
+class Selection extends Order{
     public static void main(String args[]) throws java.io.IOException {
-        USelection chsBurger = new USelection();
-        USelection htDg = new USelection();
-        USelection fF = new USelection();
-        USelection gbBurrito = new USelection();
-        USelection chkTaco = new USelection();
-        USelection pepPizza = new USelection();
-        USelection sfjShrimp = new USelection();
-        USelection fhChip = new USelection();
+        Order chsBurger = new Order();
+        Order htDg = new Order();
+        Order fF = new Order();
+        Order gbBurrito = new Order();
+        Order chkTaco = new Order();
+        Order pepPizza = new Order();
+        Order sfjShrimp = new Order();
+        Order fhChip = new Order();
+    System.out.println("Order:");
     //Items Variables
         //Cheeseburger
-    chsBurger.num = 1;
+    chsBurger.print();
     chsBurger.item = "Cheeseburger";
     chsBurger.price = "$5.50";
         //Hot Dog
-    htDg.num = 2;
+    htDg.print();
     htDg.item = "Hot Dog";
     htDg.price = "$4.00";
         //French Fries
-    fF.num = 3;
+    fF.print();
     fF.item = "French Fries";
     fF.price = "$5.50";
-    boolean ignition = true;
-    int nitems = 1;
-    while(ignition == true) {
+    int nitems = (int) System.in.read();
+    for(nitems = 1; nitems <= 8; nitems++) {
         switch(nitems) {
         case '1':
             System.out.print(chsBurger.item);
@@ -44,8 +45,6 @@ class Slct extends USelection{
             System.out.print(chsBurger.item);
             System.out.println(" " + chsBurger.price);
             break;
-        default:
-            System.out.println("Please Select an Item.");
         }
     }
     

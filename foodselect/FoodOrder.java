@@ -1,66 +1,37 @@
-package UserInterface;
+package foodselect;
 
 import java.util.Scanner;
-import UserInterface.MenuDisplay;
 
-public class Order {
+public class FoodOrder {
     //Constructors
     String price;
     String item; 
 }
-class Selection extends Order{
+class Selection extends FoodOrder{
     public static void main(String args[]) throws java.io.IOException {
-        MenuDisplay menu = new MenuDisplay();
-        menu.Menu();
-        System.out.println();
         System.out.println("Order:");
         System.out.println("- Please type the food item exact to that of the 'Menu' followed by ENTER.");
         System.out.println("- Type 'Done' when you have completed your food order.");
-        System.out.println("Ex. \n\tCheeseburger\n\tDone");
+        System.out.println("Ex. \n\tCheeseburger\n\tHot Dog\n\tDone");
         //Intiate System to read Strings
         Scanner inread = new Scanner(System.in);
         String text = inread.nextLine();
         //Objects
-        Order chsBurger = new Order();
-        Order htDg = new Order();
-        Order fF = new Order();
-        Order gbBurrito = new Order();
-        Order chkTaco = new Order();
-        Order pepPizza = new Order();
-        Order sfjShrimp = new Order();
-        Order fsNChip = new Order();
-    //Items Variables
-        //Cheeseburger
-    chsBurger.item = "Cheeseburger";
-    chsBurger.price = "$5.50";
-        //Hot Dog
-    htDg.item = "Hot Dog";
-    htDg.price = "$4.00";
-        //French Fries
-    fF.item = "French Fries";
-    fF.price = "$2.05";
-        //Ground Beef Burrito
-    gbBurrito.item = "Ground Beef Burrito";
-    gbBurrito.price = "$10.00";
-        //Chicken Taco
-    chkTaco.item = "Chicken Taco";
-    chkTaco.price = "$4.25";
-        //Pepperoni Pizza
-    pepPizza.item = "12\" Pepperoni Pizza";
-    pepPizza.price = "$12.50";
-        //Fried Shrimp
-    sfjShrimp.item = "10 Piece - Southern Fried Jumbo Shrimp";
-    sfjShrimp.price = "$10.50";
-        //Fish and Chips
-    fsNChip.item = "Fish and Chips";
-    fsNChip.price = "$11.50";
+        FoodOrder chsBurger = new FoodOrder();
+        FoodOrder htDg = new FoodOrder();
+        FoodOrder fF = new FoodOrder();
+        FoodOrder gbBurrito = new FoodOrder();
+        FoodOrder chkTaco = new FoodOrder();
+        FoodOrder pepPizza = new FoodOrder();
+        FoodOrder sfjShrimp = new FoodOrder();
+        FoodOrder fsNChip = new FoodOrder();
     
     if (text == "Done") {
         System.exit(0);
         }
     else{
         int numitems = 8;
-        for(text = "Start Here -"; numitems >= 8; numitems++) {
+        for(text = "Start Here -"; numitems <= 8; numitems++) {
             switch(text) {
             case "Cheeseburger":
                 System.out.print(chsBurger.item + " -");

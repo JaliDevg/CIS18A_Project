@@ -1,4 +1,4 @@
-package UserInterface;
+package foodselect;
 public class MenuDisplay {
     public void Menu() {
         System.out.println("Menu:");

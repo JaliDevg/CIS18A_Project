@@ -19,7 +19,7 @@ class Selection extends FoodSelect{
         //Intiate System to read Strings
         Scanner inread = new Scanner(System.in);
         String text = inread.nextLine();
-        boolean text = false;
+        boolean textbool = false;
         //Objects
         FoodSelect chsBurger = new FoodSelect();
         FoodSelect htDg = new FoodSelect();

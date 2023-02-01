@@ -1,5 +1,4 @@
 package order;
-
 import java.util.Scanner;
 
 public class FoodSelect {

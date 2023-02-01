@@ -1,8 +1,7 @@
 package delivery;
 import java.util.*;
 public class Hours {
-    public static void main(String args[])
-    {
+    public void userTime() {
         Calendar current = Calendar.getInstance();
         System.out.println("Current Time: " + current.getTime());
     }

@@ -1,7 +1,8 @@
 package delivery;
 import java.util.*;
+
 public class Address {
-    public void userAddress() throws java.io.IOException, IllegalStateException {
+    public void userAddress() {
         System.out.println("Insert Delivery Address: ");
         Scanner readtxt = new Scanner(System.in);
         String typein = readtxt.nextLine();

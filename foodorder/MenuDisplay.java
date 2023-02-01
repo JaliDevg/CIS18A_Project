@@ -1,6 +1,6 @@
-package foodselect;
+package foodorder;
 public class MenuDisplay {
-    public void Menu() {
+    public void menuItems() {
         System.out.println("Menu:");
         System.out.println();
         String food[][] = {

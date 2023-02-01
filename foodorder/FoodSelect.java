@@ -1,14 +1,18 @@
-package foodselect;
+package foodorder;
 
 import java.util.Scanner;
 
-public class FoodOrder {
+public class FoodSelect {
     //Constructors
     String price;
-    String item; 
+    String item;
+    public boolean hasNextLine(String done) {
+        done = "Done";
+        return true;
+    }
 }
-class Selection extends FoodOrder{
-    public void UserOrder() throws java.io.IOException {
+class Selection extends FoodSelect{
+    public void userOrder() throws java.io.IOException, IllegalStateException{
         System.out.println("Order:");
         System.out.println("- Please type the food item exact to that of the 'Menu' followed by ENTER.");
         System.out.println("- Type 'Done' when you have completed your food order.");
@@ -16,23 +20,24 @@ class Selection extends FoodOrder{
         //Intiate System to read Strings
         Scanner inread = new Scanner(System.in);
         String text = inread.nextLine();
+        boolean text = false;
         //Objects
-        FoodOrder chsBurger = new FoodOrder();
-        FoodOrder htDg = new FoodOrder();
-        FoodOrder fF = new FoodOrder();
-        FoodOrder gbBurrito = new FoodOrder();
-        FoodOrder chkTaco = new FoodOrder();
-        FoodOrder pepPizza = new FoodOrder();
-        FoodOrder sfjShrimp = new FoodOrder();
-        FoodOrder fsNChip = new FoodOrder();
+        FoodSelect chsBurger = new FoodSelect();
+        FoodSelect htDg = new FoodSelect();
+        FoodSelect fF = new FoodSelect();
+        FoodSelect gbBurrito = new FoodSelect();
+        FoodSelect chkTaco = new FoodSelect();
+        FoodSelect pepPizza = new FoodSelect();
+        FoodSelect sfjShrimp = new FoodSelect();
+        FoodSelect fsNChip = new FoodSelect();
     
-    if (text == "Done") {
+    if (text.hasNextLine(true)) {
         System.exit(0);
         }
     else{
         int numitems = 8;
-        for(text = "Start Here -"; numitems <= 8; numitems++) {
-            switch(text) {
+        while(inread hasNextLine()) {
+            switch(FoodSelect.class<hasNextLine) {
             case "Cheeseburger":
                 System.out.print(chsBurger.item + " -");
                 System.out.println(" " + chsBurger.price);

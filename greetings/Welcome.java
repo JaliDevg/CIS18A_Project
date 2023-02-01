@@ -1,6 +1,6 @@
 package greetings;
 public class Welcome {
-    public void GreetWlc() 
+    public void greetWlc() 
     throws java.io.IOException {
         System.out.println("Welcome!");
         System.out.println("Place an order To Go:");

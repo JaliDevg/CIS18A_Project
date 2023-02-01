@@ -35,7 +35,7 @@ Monday - Sunday: 11 a.m. - 10 p.m.
 ### Running the Code:
 1. Open files into a text editor or an IDE.
 2. Save the files onto computer.
-3. Open 'Command Prompt' (Windows) or 'terminal' (MacOS & Linux) and type into terminal:
+3. Open 'Command Prompt' (Windows) or 'Terminal' (MacOS & Linux) and after changing directories (link) type:
 ```java
 javac Main.java
 java Main

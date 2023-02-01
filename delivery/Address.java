@@ -1,6 +1,6 @@
-public class Delivery {
+package delivery;
+public class Address {
     public static void main(String args[]) throws java.io.IOException  {
         System.out.println("Order:");
-        //Include items ordered by user
     }
 }

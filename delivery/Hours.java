@@ -1,11 +1,10 @@
 package delivery;
-import java.util.Date;
-
+import java.util.*;
 public class Hours {
-    public void restHours() throws IllegalStateException {
-        Date time = new Date();
-        time = getTime();
-        double am = 11.0;
-        double pm = 10.0;
+    public static void main(String args[])
+    {
+        Calendar current = Calendar.getInstance();
+        System.out.println("Current Time: " + current.getTime());
     }
 }
+//Restraunt Business Hours: 11 am = 10 pm

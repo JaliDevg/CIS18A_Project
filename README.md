@@ -33,9 +33,9 @@ Monday - Saturday: 11 a.m. - 10 p.m.
 |Fish and Chips 🐟 🥔|<sub>$11.50</sub>|
 
 ### Running the Code:
-Open files into a text editor or an IDE.
-
-Type into terminal:
+1. Open files into a text editor or an IDE.
+2. Save the files onto computer.
+3. Open 'Command Prompt'(Windows), 'terminal'(MacOS), or 'Command Line'(Linux) and type into terminal:
 ```java
 javac Main.java
 java Main

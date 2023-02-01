@@ -18,7 +18,7 @@ The purpose of this project is to allow the customer to select a food item from 
 ![image](https://user-images.githubusercontent.com/122196793/214783335-47bbf8da-38db-409a-a52f-56c4271759b7.png)
 
 ### Business Hours:
-Monday - Saturday: 11 a.m. - 10 p.m.
+Monday - Sunday: 11 a.m. - 10 p.m.
 
 ### Menu:
 |Item|Price|

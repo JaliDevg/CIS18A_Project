@@ -1,4 +1,4 @@
-package foodorder;
+package order;
 
 import java.util.Scanner;
 

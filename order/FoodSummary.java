@@ -1,8 +1,8 @@
-package foodorder;
-import foodorder.*;
+package order;
+import order.*;
 public class FoodSummary {
     public void userSummary() {
-        foodorder.Selection printback = new Selection();
+        order.Selection printback = new Selection();
         printback.chsBurger.item = "Cheeseburger";
         System.out.println("Order Summary:");
         //Items Variables

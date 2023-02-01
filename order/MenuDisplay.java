@@ -1,4 +1,4 @@
-package foodorder;
+package order;
 public class MenuDisplay {
     public void menuItems() {
         System.out.println("Menu:");

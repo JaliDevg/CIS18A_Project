@@ -8,7 +8,7 @@ public class FoodOrder {
     String item; 
 }
 class Selection extends FoodOrder{
-    public static void main(String args[]) throws java.io.IOException {
+    public void UserOrder() throws java.io.IOException {
         System.out.println("Order:");
         System.out.println("- Please type the food item exact to that of the 'Menu' followed by ENTER.");
         System.out.println("- Type 'Done' when you have completed your food order.");

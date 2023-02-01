@@ -2,12 +2,11 @@ package foodselect;
 import foodselect.*;
 public class FoodSummary {
     public void Summary() {
-        foodselect.FoodOrder printback = new FoodOrder();
-        printback.item;
+        foodselect.Selection printback = new Selection();
+        printback.chsBurger.item = "Cheeseburger";
         System.out.println("Order Summary:");
         //Items Variables
             //Cheeseburger
-        chsBurger.item = "Cheeseburger";
         chsBurger.price = "$5.50";
             //Hot Dog
         htDg.item = "Hot Dog";

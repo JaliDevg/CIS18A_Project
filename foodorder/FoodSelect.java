@@ -7,7 +7,7 @@ public class FoodSelect {
     String price;
     String item;
     public boolean hasNextLine(String done) {
-        done = "Done";
+        done = "Complete Order.";
         return true;
     }
 }

@@ -42,7 +42,7 @@ Monday - Sunday: 11 a.m. - 10 p.m.
 javac Main.java
 java Main
 ```
-4. The java program will be executed and run.
+4. The java program will executed and run.
 
 ### Documentation:
 - [Program Description](https://docs.google.com/document/d/12VckzX7ASLMIXS2qpAdImnpxEZ7ASTpMhUTJBm0ZqSM/view)

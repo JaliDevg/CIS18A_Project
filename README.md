@@ -5,7 +5,7 @@
 > (Prompt #1)
 
 ## Objective:
-The purpose of this project is to create a delivery service program that would allow the customer to select a food item from the menu and deliver it to the desired address. The user's food order must display an order summary and must be placed during the restaurant’s business hours.
+The purpose of this project is to create a delivery service program that would allow the customer to select a food item from the menu and deliver it to the desired address. The user's food order must display an order summary and must be placed during the restaurant’s business hours. The user will be able to interact with the program through the console during the selection of food items and when entering the address and payment information used for the order.
 
 ## Table of Contents:
 1. [Restaurant Logo](#restaurant-logo)

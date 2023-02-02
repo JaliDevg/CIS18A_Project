@@ -2,7 +2,6 @@ package order;
 public class MenuDisplay {
     public void menuItems() {
         System.out.println("Menu:");
-        System.out.println();
         String food[][] = {
         {"Cheeseburger -", "$5.50"},
         {"Hot Dog -", "$4.00"},

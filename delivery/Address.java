@@ -5,7 +5,9 @@ public class Address {
     public void userAddress() {
         System.out.println("Insert Delivery Address: ");
         Scanner readtxt = new Scanner(System.in);
+        readtxt.close();
         String typein = readtxt.nextLine();
+        System.out.println();
         System.out.println("Estimated Delivery Time: 30 minutes.");
         /*
          if (typein.nextLine(System.in)) {

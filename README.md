@@ -44,5 +44,5 @@ java Main
 
 ### Documentation:
 - [Program Description](https://docs.google.com/document/d/12VckzX7ASLMIXS2qpAdImnpxEZ7ASTpMhUTJBm0ZqSM/view)
-- [Pseudocode](https://docs.google.com/document/d/1NJhA5vS_7trsgj5_Brd_sQV5NERZ2sulxQeJGaa8DHA/view)
+- [Program Pseudocode](https://docs.google.com/document/d/1NJhA5vS_7trsgj5_Brd_sQV5NERZ2sulxQeJGaa8DHA/view)
 - [Self Refection](https://docs.google.com/document/d/19Y9HJbnN2-79MyezEdDhqPXnoPXEBk6tU_4KpBtKQF0/view)

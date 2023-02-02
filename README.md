@@ -31,6 +31,8 @@ Monday - Sunday: 11 a.m. - 10 p.m.
 |12 Inch Pepperoni Pizza 🍕|<sub>$12.50</sub>|
 |10 Pieces of Southern Fried Jumbo Shrimp 🍤|<sub>$10.50</sub>|
 |Fish and Chips 🐟 🥔|<sub>$11.50</sub>|
+> Plus Tax: 7.25%
+
 
 ### Running the Code:
 1. Open files into a text editor or an IDE.

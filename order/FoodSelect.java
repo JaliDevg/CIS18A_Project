@@ -30,7 +30,8 @@ class Selection extends FoodSelect{
         FoodSelect sfjShrimp = new FoodSelect();
         FoodSelect fsNChip = new FoodSelect();
     
-    if (text.hasNextLine(true)) {
+    /*
+        if (text.hasNextLine(true)) {
         System.exit(0);
         }
     else{
@@ -73,5 +74,7 @@ class Selection extends FoodSelect{
         
         //Firgure out type of loop(?) | output Invalid input if anything else is inputted
         }
+     */
+   
     }
 }

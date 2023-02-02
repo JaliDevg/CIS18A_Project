@@ -3,6 +3,7 @@ import order.*;
 public class FoodSummary {
     public void userSummary() {
         order.Selection printback = new Selection();
+        /*
         printback.chsBurger.item = "Cheeseburger";
         System.out.println("Order Summary:");
         //Items Variables
@@ -29,6 +30,8 @@ public class FoodSummary {
             //Fish and Chips
         fsNChip.item = "Fish and Chips";
         fsNChip.price = "$11.50";
+         */
+        
     }
     
 }

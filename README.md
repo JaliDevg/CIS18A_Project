@@ -1,6 +1,8 @@
 **CIS18A-Project**
-==============
+==================
 > *BY: Javier Delgado and Liam Graham*
+#### _Published: Feburary 6, 2023_
+
 # "Regular Restaurant" 
 > (Prompt #1)
 

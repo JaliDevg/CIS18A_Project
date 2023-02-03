@@ -1,5 +1,6 @@
 package order;
 import java.util.Scanner;
+import order.Menu;
 
 public class FoodSelect {
     public void userSelect() {
@@ -9,22 +10,26 @@ public class FoodSelect {
         System.out.println("Ex. \n\tCheeseburger\n\tHot Dog\n\tComplete Order");
         System.out.println("Enter Food Order Here: \n");
         Scanner scanner = new Scanner(System.in);
-        String item = "";
+        Menu food = new Menu();
+        //add items constraint
+        food.allItems();
+        food.allPrices();
         while (true) {
             String systemread = scanner.nextLine();
 
             if (systemread.equals("Complete Order")) {
                 break;
             }
-            switch (item) {
+            switch (food.allItems()) {
                 case "":
-                    item = systemread;
+                    food = systemread;
+                    //Insert food = price
                     break;
                 default:
-                    item = item + ", " + systemread;
+                    food = food + ", " + systemread;
                     break;
             }
         }
-        System.out.println("Food Item(s) Ordered: " + item);
+        System.out.println("Food Item(s) Ordered: " + food.allItems() + " - " + food.allPrices());
     }
 }

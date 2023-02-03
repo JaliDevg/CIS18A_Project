@@ -39,10 +39,22 @@ Monday - Sunday: 11 a.m. - 10 p.m.
 
 ### Running the Code:
 1. Download zipped java files from GitHub repository by clicking on the "Code" button, select local, and "Download Zip".
-2. Open "CIS18A_Project-master.zip" and open the Main.java into a text editor or an IDE.
-3. Save the files onto computer.
+2. Open the "CIS18A_Project-master.zip" file and open the "Main.java" into a text editor or an IDE.
+3. Esnure that the files are saved onto computer as '.java' files.
 4. Open 'Command Prompt' (Windows) or 'Terminal' (MacOS & Linux) and after changing directories ([Mac & Linux](https://www.youtube.com/watch?v=VRFcEMPES7U) or [Windows](https://www.youtube.com/watch?v=n5GL0ojndRU)) type the command:
+Windows:
 ```java
+cd Downloads
+tar -xf CIS18A_Project-master.zip
+cd CIS18A_Project-master
+javac Main.java
+java Main
+```
+MacOS/Linux:
+```java
+cd Downloads
+unzip CIS18A_Project-master.zip
+cd CIS18A_Project-master
 javac Main.java
 java Main
 ```

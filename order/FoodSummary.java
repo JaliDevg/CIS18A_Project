@@ -11,7 +11,8 @@ public class FoodSummary {
 }
 class TotalPrice extends FoodSummary {
     public void userPrice() {
-        System.out.println("Total: $" + totaldollars + "." + totalcents);
+        System.out.println("Works");
+        //System.out.println("Total: $" + totaldollars + "." + totalcents);
     }
     //Objects
     FoodSummary chsBurger = new FoodSummary();
@@ -22,6 +23,7 @@ class TotalPrice extends FoodSummary {
     FoodSummary pepPizza = new FoodSummary();
     FoodSummary sfjShrimp = new FoodSummary();
     FoodSummary fsNChip = new FoodSummary();
+    /*
     //Object Variables
         //Cheeseburger
         chsBurger.price = "$5.50";
@@ -39,4 +41,7 @@ class TotalPrice extends FoodSummary {
         sfjShrimp.price = "$10.50";
         //Fish and Chips
         fsNChip.price = "$11.50";
+     */
+    
+        
 }

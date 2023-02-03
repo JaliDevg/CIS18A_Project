@@ -7,12 +7,15 @@ public class Main {
         greetings.Welcome wlc = new Welcome();
         order.MenuDisplay menu = new MenuDisplay();
         order.FoodSelect select = new FoodSelect(); 
+        order.FoodSummary sum = new FoodSummary();
         greetings.ThankYou ty = new ThankYou();
         wlc.greetWlc();
         System.out.println();
         menu.menuItems();
         System.out.println();
         select.userSelect();
+        System.out.println();
+        sum.TotalPrice;
         System.out.println();
         ty.greetTy();
         System.out.println();

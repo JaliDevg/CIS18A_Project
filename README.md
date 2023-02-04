@@ -2,11 +2,12 @@
 ==================
 > *BY: Javier Delgado and Liam Graham*
 #### _Published: January 23, 2023_
+#### _v2.2.1_
 
 # "Regular Restaurant" 
 > (Prompt #1)
 
-## Objective:
+## Description:
 The purpose of this project is to create a delivery service program that would allow the customer to select a food item from the menu and deliver it to the desired address. The user's food order must display an order summary and must be placed during the restaurant’s business hours. The user will be able to interact with the program through the console during the selection of food items and when entering the address and payment information used for the order.
 
 ## Table of Contents:
@@ -37,14 +38,28 @@ Monday - Sunday: 11 a.m. - 10 p.m.
 
 
 ### Running the Code:
-1. Open files into a text editor or an IDE.
-2. Save the files onto computer.
-3. Open 'Command Prompt' (Windows) or 'Terminal' (MacOS & Linux) and after changing directories ([Mac & Linux](https://www.youtube.com/watch?v=VRFcEMPES7U) or [Windows](https://www.youtube.com/watch?v=n5GL0ojndRU)) type the command:
+1. Download zipped java files from GitHub repository by clicking on the "Code" button, select local, and "Download Zip".
+2. Open the "CIS18A_Project-master.zip" file and open the "Main.java" into a text editor or an IDE.
+3. Esnure that the files are saved onto computer as '.java' files.
+4. Open 'Command Prompt' (Windows) or 'Terminal' (MacOS & Linux) and type the command:
+
+Windows:
 ```java
+cd Downloads
+tar -xf CIS18A_Project-master.zip
+cd CIS18A_Project-master
 javac Main.java
 java Main
 ```
-4. The java program will executed and run.
+MacOS/Linux:
+```java
+cd Downloads
+unzip CIS18A_Project-master.zip
+cd CIS18A_Project-master
+javac Main.java
+java Main
+```
+5. The java program will execute and run.
 
 ### Documentation:
 - [Program Description](https://docs.google.com/document/d/12VckzX7ASLMIXS2qpAdImnpxEZ7ASTpMhUTJBm0ZqSM/view)

@@ -1,4 +1,5 @@
 package order;
+import order.*;
 
 public class TotalPrice extends FoodSummary {
     public void userPrice() {

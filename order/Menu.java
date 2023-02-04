@@ -1,7 +1,6 @@
 package order;
-import java.util.ArrayList;
 
-public class Menu {
+class Menu {
     private String fooditems[][] = {
         {"Cheeseburger -", "$5.50"},
         {"Hot Dog -", "$4.00"},
@@ -20,17 +19,5 @@ public class Menu {
             System.out.print(fooditems[a][b] + " ");
         System.out.println();
         } 
-    }    
-    public void allItems() {    
-        ArrayList<String> items = new ArrayList<>();
-        items.add("Cheeseburger");
-        items.add("Hot Dog");
-        items.add("French Fries");
-    }
-    public void allPrices(){
-        ArrayList<String> prices = new ArrayList<>();
-        prices.add("$5.50");
-        prices.add("$4.00");
-        prices.add("$2.05");
-    }
+    }       
 }

@@ -1,4 +1,4 @@
-package greetings;
+package startend;
 public class ThankYou {
     public void greetTy() {
         System.out.println("Thank you for your order!");

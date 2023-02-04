@@ -1,6 +1,6 @@
 package order;
 
-class Menu {
+public class Menu {
     private String fooditems[][] = {
         {"Cheeseburger -", "$5.50"},
         {"Hot Dog -", "$4.00"},

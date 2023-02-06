@@ -15,8 +15,8 @@ public class FoodSelect {
         //Display Instructions
         System.out.println("Order:");
         System.out.println("- Please type in the food item name to that of the 'Menu' followed by ENTER.");
-        System.out.println("- Enter 'Complete Order' when you have completed your food order.");
-        System.out.println("Ex. \n\tCheeseburger\n\tHot Dog\n\tComplete Order");
+        System.out.println("- Enter 'Checkout' when you have completed your food order.");
+        System.out.println("Ex. \n\tCheeseburger\n\tHot Dog\n\tCheckout");
         System.out.println("Enter Food Order Here:");
     }
     public void userSelect() {
@@ -31,19 +31,26 @@ public class FoodSelect {
             "10.50",
             "11.50"
         };
-        String chsBurger = allPrices[0];
-        String htDog = allPrices[1];
-        String fF = allPrices[2];
-        String gbBurro = allPrices[3];
-        String ChkTaco = allPrices[4];
-        String pepPizza = allPrices[5];
-        String sfjShrimp = allPrices[6];
+        String chsBurger = new String();
+        chsBurger = allPrices[0];
+        String htDog = new String();
+        htDog = allPrices[1];
+        String fF = new String();
+        fF = allPrices[2];
+        String gbBurro = new String();
+        gbBurro = allPrices[3];
+        String ChkTaco = new String();
+        ChkTaco = allPrices[4];
+        String pepPizza = new String();
+        pepPizza = allPrices[5];
+        String sfjShrimp = new String();
+        sfjShrimp = allPrices[6];
         String fshChips = allPrices[7];
         //The User's Input
         while (true) {
             String systemread = scanner.nextLine();
             //Finish the food order
-            if (systemread.equals("Complete Order")) {
+            if (systemread.equals("Checkout")) {
                 break;
             }
             //Print Price for each Food Item typed
@@ -104,15 +111,17 @@ public class FoodSelect {
             }         
         }
         //Food Summary
-        System.out.print("\nFood Item(s) Order:");
+        System.out.println("\nFood Summary:");
+        System.out.println("*(Includes 7.25% Tax)");
+        System.out.println("\nFood Item(s) Ordered:");
         int pricePerItem = 0;
             for (String order : selectedOrders) {
-                System.out.print("\n" + order + " - $" + totalPrice.get(pricePerItem));
+                System.out.println(order + " - $" + totalPrice.get(pricePerItem));
                 pricePerItem++;
             }
         scanner.close(); 
     }
-    public static List<String> userTotalPrice() {
+    public List<String> getList() {
         return totalPrice;
     }
 }

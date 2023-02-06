@@ -8,7 +8,7 @@ public class Main {
         startend.Welcome wlc = new Welcome();
         order.Menu menu = new Menu();
         order.FoodSelect select = new FoodSelect(); 
-        //order.CalcTotal totprice = new CalcTotal();
+        order.CalcTotal totprice = new CalcTotal();
         startend.ThankYou ty = new ThankYou();
         //Import Methods
         wlc.greetWlc();
@@ -17,9 +17,9 @@ public class Main {
         System.out.println();
         select.display();
         select.userSelect();
-        FoodSelect.userTotalPrice();
         System.out.println();
-        //totprice.plusTax();
+        totprice.displayTax();
+        totprice.plusTax();
         System.out.println();
         ty.greetTy();
         System.out.println();

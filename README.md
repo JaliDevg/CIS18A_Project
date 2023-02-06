@@ -2,13 +2,13 @@
 ==================
 > *BY: Javier Delgado and Liam Graham*
 #### _Published: January 23, 2023_
-#### _v2.2.1_
+#### _v3.5.2_
 
 # "Regular Restaurant" 
 > (Prompt #1)
 
 ## Description:
-The purpose of this project is to create a delivery service program that would allow the customer to select a food item from the menu and deliver it to the desired address. The user's food order must display an order summary and must be placed during the restaurant’s business hours. The user will be able to interact with the program through the console during the selection of food items and when entering the address and payment information used for the order.
+The purpose of this project is to create a delivery service program that would allow the customer to select a food item from the menu and deliver it to the desired address. The user's food order must display an order summary and the delivery time for the user should be during the restaurant’s business hours. The user will be able to interact with the program through the console during the selection of food items, when entering the address, and payment information used for the order.
 
 ## Table of Contents:
 1. [Restaurant Logo](#restaurant-logo)
@@ -48,16 +48,16 @@ Windows:
 cd Downloads
 tar -xf CIS18A_Project-master.zip
 cd CIS18A_Project-master
-javac Main.java
-java Main
+javac src/Main.java
+java src.Main
 ```
 MacOS/Linux:
 ```java
 cd Downloads
 unzip CIS18A_Project-master.zip
 cd CIS18A_Project-master
-javac Main.java
-java Main
+javac src/Main.java
+java src.Main
 ```
 5. The java program will execute and run.
 

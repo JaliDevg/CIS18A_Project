@@ -8,16 +8,17 @@ public class FoodSelect {
     Scanner scanner = new Scanner(System.in);
     String selectedItem = "";
     String selectedPrice = "";
+    //Util Package: Array List (Reference - https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/ArrayList.html)
     List<String> selectedOrders = new ArrayList<>();
     static List<String> totalPrice = new ArrayList<>();
 
     public void display() {
         //Display Instructions
         System.out.println("Order:");
-        System.out.println("- Please type in the food item name to that of the 'Menu' followed by ENTER.");
+        System.out.println("- Please type in the item(s) name exactly as shown on the 'Menu' followed by ENTER.");
         System.out.println("- Enter 'Checkout' when you have completed your food order.");
         System.out.println("Ex. \n\tCheeseburger\n\tHot Dog\n\tCheckout");
-        System.out.println("Enter Food Order Here:");
+        System.out.println("\nEnter Food Order Here:");
     }
     public void userSelect() {
         //Array of all the prices for each food items
@@ -112,7 +113,7 @@ public class FoodSelect {
         }
         //Food Summary
         System.out.println("\nFood Summary:");
-        System.out.println("*(Includes 7.25% Tax)");
+        System.out.println("- Includes 7.25% Tax");
         System.out.println("\nFood Item(s) Ordered:");
         int pricePerItem = 0;
             for (String order : selectedOrders) {

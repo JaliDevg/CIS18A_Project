@@ -2,6 +2,7 @@ package order;
 
 public class Menu {
     private String fooditems[][] = {
+        //Array of available items
         {"Cheeseburger", " - $5.50"},
         {"Hot Dog", " - $4.00"},
         {"French Fries", " - $2.05"},
@@ -12,6 +13,7 @@ public class Menu {
         {"Fish and Chips", " - $11.50"}
     };
     public void menuItems() {
+        //Print all available items
         System.out.println("Menu:");
         int a, b;
         for(a=0; a < fooditems.length; a++) {

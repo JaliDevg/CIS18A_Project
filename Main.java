@@ -17,6 +17,7 @@ public class Main {
         System.out.println();
         select.display();
         select.userSelect();
+        FoodSelect.userTotalPrice();
         System.out.println();
         //totprice.plusTax();
         System.out.println();

@@ -110,12 +110,9 @@ public class FoodSelect {
                 System.out.print("\n" + order + " - $" + totalPrice.get(pricePerItem));
                 pricePerItem++;
             }
-        System.out.println();
         scanner.close(); 
     }
-    public static void userTotalPrice() {
-        for (String totprice : totalPrice) {
-            totprice = ("$" + totprice);
-        }
+    public static List<String> userTotalPrice() {
+        return totalPrice;
     }
 }

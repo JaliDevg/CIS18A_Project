@@ -7,17 +7,21 @@ public class Main {
         startend.Welcome wlc = new Welcome();
         order.Menu menu = new Menu();
         order.FoodSelect select = new FoodSelect(); 
-        order.TotalPrice totprice = new TotalPrice();
+        //order.FoodSummary totprice = new FoodSummary();
         startend.ThankYou ty = new ThankYou();
 
         wlc.greetWlc();
         System.out.println();
         menu.menuItems();
         System.out.println();
+        //Bugs
+        select.display();
         select.userSelect();
         System.out.println();
-        totprice.userPrice();
-        System.out.println();
+        // - In Progress
+            //totprice.plusTax();
+            //System.out.println();
+        //End of bugs
         ty.greetTy();
         System.out.println();
     }

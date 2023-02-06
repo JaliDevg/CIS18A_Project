@@ -1,9 +1,8 @@
 package order;
-import order.*;
 
-public class FoodSummary {
+public class FoodSummary extends FoodSelect{
     //Constructors
-    String price;
+    String totalPrice;
 
     public void plusTax() {
         double tax = .0725;

@@ -1,66 +1,124 @@
 package order;
 import java.util.Scanner;
 import java.util.ArrayList;
-import order.Menu;
+import java.util.List;
 
 public class FoodSelect {
-    //Array List of Prices
-    public static ArrayList<String> prices = new ArrayList<>();
-    static {
-        prices.add("$5.50");
-        prices.add("$4.00");
-        prices.add("$2.05");
-
-    for(int j = 0; j < prices.size(); j++) {
-        String allprices = prices.get(j);
-        }
-    }
-    //Array List of Items
-    public static ArrayList<String> items = new ArrayList<>();
-        static {
-        items.add("Cheeseburger");
-        items.add("Hot Dog");
-        items.add("French Fries");  
-    for(int i = 0; i < items.size(); i++) {
-        String allitems = items.get(i);
-        }
-    }
-    public void userSelect() {
-        System.out.println("Food Order:");
-        System.out.println("- Please type in the food item name exact to that of the 'Menu' followed by ENTER.");
+    public void display() {
+        //Display Instructions
+        System.out.println("Order:");
+        System.out.println("- Please type in the food item name to that of the 'Menu' followed by ENTER.");
         System.out.println("- Enter 'Complete Order' when you have completed your food order.");
         System.out.println("Ex. \n\tCheeseburger\n\tHot Dog\n\tComplete Order");
-        System.out.println("Enter Food Order Here: \n");
+        System.out.println("Enter Food Order Here:");
+    }
+    public void userSelect() {
+        //Array of all the prices for each food items
+        double allPrices[] = {
+            5.501, 
+            4.001, 
+            2.051, 
+            10.001,
+            4.25,
+            12.501,
+            10.501,
+            11.501
+        };
+        //Allow allPrices to be accessed later
+        double chsBurger = allPrices[0];
+        double htDog = allPrices[1];
+        double fF = allPrices[2];
+        double gbBurro = allPrices[3];
+        double ChkTaco = allPrices[4];
+        double pepPizza = allPrices[4];
+        double sfjShrimp = allPrices[5];
+        double fshChips = allPrices[6];
+        //Constructors for the User's Input
         Scanner scanner = new Scanner(System.in);
-
-        if(!(items | prices)) System.out.println("Invalid Reponse");
-        
-        for (int i = 0; i < items(); i++) {
-                System.out.println(items.get(i) + ": " + prices.get(i));
-        allprices();
-        
+        String selectedItem = "";
+        double selectedPrice = 0.00;
+        List<String> selectedOrders = new ArrayList<>();
+        List<Double> totalPrice = new ArrayList<>();
+        //The User's Input
         while (true) {
             String systemread = scanner.nextLine();
-
+            //Finish the food order
             if (systemread.equals("Complete Order")) {
                 break;
             }
-            
-            }
-            switch (items()) {
+            //Print Price for each Food Item typed
+            switch (systemread) {
                 case "Cheeseburger":
-                    food = systemread;
-                    //Insert food = price
-                    break;
-                default:
-                    food = food + ", " + systemread;
-                    break;
+                selectedItem = systemread;
+                selectedOrders.add(selectedItem);
+                selectedPrice = chsBurger;
+                totalPrice.add(selectedPrice);
+                break;
+                case "Hot Dog":
+                selectedItem = systemread;
+                selectedOrders.add(selectedItem);
+                selectedPrice = htDog;
+                totalPrice.add(selectedPrice);
+                break;
+                case "French Fries":
+                selectedItem = systemread;
+                selectedOrders.add(selectedItem);
+                selectedPrice = fF;
+                totalPrice.add(selectedPrice);
+                break;
+                case "Ground Beef Burrito":
+                selectedItem = systemread;
+                selectedOrders.add(selectedItem);
+                selectedPrice = gbBurro;
+                totalPrice.add(selectedPrice);
+                break;
+                case "Chicken Taco":
+                selectedItem = systemread;
+                selectedOrders.add(selectedItem);
+                selectedPrice = ChkTaco;
+                totalPrice.add(selectedPrice);
+                break;
+                case "12\" Pepperoni Pizza":
+                selectedItem = systemread;
+                selectedOrders.add(selectedItem);
+                selectedPrice = pepPizza;
+                totalPrice.add(selectedPrice);
+                break;
+                case "10 Pieces of Southern Fried Jumbo Shrimp":
+                selectedItem = systemread;
+                selectedOrders.add(selectedItem);
+                selectedPrice = sfjShrimp;
+                totalPrice.add(selectedPrice);
+                break;
+                case "Fish and Chips":
+                selectedItem = systemread;
+                selectedOrders.add(selectedItem);
+                selectedPrice = fshChips;
+                totalPrice.add(selectedPrice);
+                break;
             }
+            //Error and Final Display
+            if (!selectedOrders.contains(systemread)) {
+                System.out.println("Invalid item. Please Try Again.");
+                continue;
+            }         
         }
-        System.out.println("Food Item(s) Ordered: " + items() + " - " + prices());
+        //Food Summary
+        System.out.print("\nFood Item(s) Order:");
+        int pricePerItem = 0;
+            for (String order : selectedOrders) {
+                System.out.println("\n" + order + " - $" + totalPrice.get(pricePerItem));
+                pricePerItem++;
+            }
+        scanner.close(); 
     }
-    boolean isValid(String itemstyped) throws java.io.IOError {
-        if(itemstyped != (prices & items)) return false;
-        else return true ;
+    
+    /*
+     * public static userTotalPrice() {
+        for (Double totprice : totalPrice) {
+            System.out.print("\n" + totalPrice);
+        }
     }
+     */
+    
 }

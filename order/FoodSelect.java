@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FoodSelect {
+    //Constructors for the User's Input
+    Scanner scanner = new Scanner(System.in);
+    String selectedItem = "";
+    String selectedPrice = "";
+    List<String> selectedOrders = new ArrayList<>();
+    static List<String> totalPrice = new ArrayList<>();
+
     public void display() {
         //Display Instructions
         System.out.println("Order:");
@@ -14,31 +21,24 @@ public class FoodSelect {
     }
     public void userSelect() {
         //Array of all the prices for each food items
-        double allPrices[] = {
-            5.501, 
-            4.001, 
-            2.051, 
-            10.001,
-            4.25,
-            12.501,
-            10.501,
-            11.501
+        String allPrices[] = {
+            "5.50", 
+            "4.00", 
+            "2.05", 
+            "10.00",
+            "4.25",
+            "12.50",
+            "10.50",
+            "11.50"
         };
-        //Allow allPrices to be accessed later
-        double chsBurger = allPrices[0];
-        double htDog = allPrices[1];
-        double fF = allPrices[2];
-        double gbBurro = allPrices[3];
-        double ChkTaco = allPrices[4];
-        double pepPizza = allPrices[4];
-        double sfjShrimp = allPrices[5];
-        double fshChips = allPrices[6];
-        //Constructors for the User's Input
-        Scanner scanner = new Scanner(System.in);
-        String selectedItem = "";
-        double selectedPrice = 0.00;
-        List<String> selectedOrders = new ArrayList<>();
-        List<Double> totalPrice = new ArrayList<>();
+        String chsBurger = allPrices[0];
+        String htDog = allPrices[1];
+        String fF = allPrices[2];
+        String gbBurro = allPrices[3];
+        String ChkTaco = allPrices[4];
+        String pepPizza = allPrices[5];
+        String sfjShrimp = allPrices[6];
+        String fshChips = allPrices[7];
         //The User's Input
         while (true) {
             String systemread = scanner.nextLine();
@@ -107,18 +107,15 @@ public class FoodSelect {
         System.out.print("\nFood Item(s) Order:");
         int pricePerItem = 0;
             for (String order : selectedOrders) {
-                System.out.println("\n" + order + " - $" + totalPrice.get(pricePerItem));
+                System.out.print("\n" + order + " - $" + totalPrice.get(pricePerItem));
                 pricePerItem++;
             }
+        System.out.println();
         scanner.close(); 
     }
-    
-    /*
-     * public static userTotalPrice() {
-        for (Double totprice : totalPrice) {
-            System.out.print("\n" + totalPrice);
+    public static void userTotalPrice() {
+        for (String totprice : totalPrice) {
+            totprice = ("$" + totprice);
         }
     }
-     */
-    
 }

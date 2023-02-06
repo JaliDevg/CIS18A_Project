@@ -4,24 +4,22 @@ import order.*;
 
 public class Main {
     public static void main(String args[]) throws java.io.IOError {
+        //Constuctors
         startend.Welcome wlc = new Welcome();
         order.Menu menu = new Menu();
         order.FoodSelect select = new FoodSelect(); 
-        //order.FoodSummary totprice = new FoodSummary();
+        //order.CalcTotal totprice = new CalcTotal();
         startend.ThankYou ty = new ThankYou();
-
+        //Import Methods
         wlc.greetWlc();
         System.out.println();
         menu.menuItems();
         System.out.println();
-        //Bugs
         select.display();
         select.userSelect();
         System.out.println();
-        // - In Progress
-            //totprice.plusTax();
-            //System.out.println();
-        //End of bugs
+        //totprice.plusTax();
+        System.out.println();
         ty.greetTy();
         System.out.println();
     }

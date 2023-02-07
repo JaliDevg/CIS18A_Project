@@ -8,9 +8,11 @@ public class Main {
         src.startend.Welcome wlc = new Welcome();
         src.order.Menu menu = new Menu();
         src.order.FoodSelect select = new FoodSelect(); 
-        src.order.CalcTotal totprice = new CalcTotal();
+        src.order.CalcTotal totPrice = new CalcTotal();
+        src.startend.DeliveryTime deliTime = new DeliveryTime();
         src.startend.ThankYou ty = new ThankYou();
-        //Import And Print Methods
+        //Import and output the Methods from other packages and classes
+            //Insert space between each method display
         wlc.greetWlc();
         wlc.checkTime();
         System.out.println();
@@ -19,8 +21,10 @@ public class Main {
         select.display();
         select.userSelect();
         System.out.println();
-        totprice.displayTax();
-        totprice.plusTax();
+        totPrice.displayTax();
+        totPrice.plusTax();
+        System.out.println();
+        deliTime.deliverTime();
         System.out.println();
         ty.greetTy();
         System.out.println();

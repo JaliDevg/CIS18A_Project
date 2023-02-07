@@ -1,7 +1,6 @@
 package src.delivery;
 
 import java.util.Scanner;
-
 import src.startend.Welcome;
 
 public class Address {

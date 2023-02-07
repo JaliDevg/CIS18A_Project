@@ -11,7 +11,7 @@ public class Main {
         order.FoodSelect select = new FoodSelect(); 
         order.CalcTotal totprice = new CalcTotal();
         startend.ThankYou ty = new ThankYou();
-        //Import Methods
+        //Import And Print Methods
         wlc.greetWlc();
         System.out.println();
         menu.menuItems();

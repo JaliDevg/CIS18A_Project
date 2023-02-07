@@ -51,6 +51,9 @@ public class Payment2 extends UserCard{
         UserCard userCard = new UserCard();
         System.out.println();
         System.out.println("Card type: " + cardType + "Card #:" + cardNumber);
+        CalcTotal totalNTax = new CalcTotal();
+        totalNTax.plusTax();
+        System.out.print("charged to: " + userPay.userCard);
         System.out.println();
         scanner.close();
     }

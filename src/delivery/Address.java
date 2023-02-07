@@ -1,7 +1,8 @@
-package delivery;
+package src.delivery;
 
 import java.util.Scanner;
-import startend.Welcome;
+
+import src.startend.Welcome;
 
 public class Address {
     public void userAddress() {

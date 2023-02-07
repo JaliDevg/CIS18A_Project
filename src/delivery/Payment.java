@@ -1,7 +1,8 @@
-package delivery;
+package src.delivery;
 
-import order.CalcTotal;
 import java.util.Scanner;
+
+import src.order.CalcTotal;
 
 interface CardNums {
     long nums1();

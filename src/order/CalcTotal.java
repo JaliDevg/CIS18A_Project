@@ -1,4 +1,4 @@
-package order;
+package src.order;
 import java.util.ArrayList;
 
 class Values{
@@ -21,7 +21,7 @@ public class CalcTotal extends Values {
     }
     public void plusTax() {
         //Access totalPrice array from FoodSelect text file and convert to new double array
-        order.FoodSelect granTotal = new FoodSelect();
+        src.order.FoodSelect granTotal = new FoodSelect();
         ArrayList<Double> realPrice = new ArrayList<>();
         granTotal.getList();
         for (String str : granTotal.getList()) {

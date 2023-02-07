@@ -1,16 +1,15 @@
 package src;
-import startend.*;
-import order.*;
-//import delivery.*;
+import src.order.*;
+import src.startend.*;
 
 public class Main {
     public static void main(String args[]) throws java.io.IOError {
         //Constuctors
-        startend.Welcome wlc = new Welcome();
-        order.Menu menu = new Menu();
-        order.FoodSelect select = new FoodSelect(); 
-        order.CalcTotal totprice = new CalcTotal();
-        startend.ThankYou ty = new ThankYou();
+        src.startend.Welcome wlc = new Welcome();
+        src.order.Menu menu = new Menu();
+        src.order.FoodSelect select = new FoodSelect(); 
+        src.order.CalcTotal totprice = new CalcTotal();
+        src.startend.ThankYou ty = new ThankYou();
         //Import And Print Methods
         wlc.greetWlc();
         wlc.checkTime();

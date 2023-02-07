@@ -1,4 +1,4 @@
-package startend;
+package src.startend;
 import java.time.LocalTime;
 import java.time.format.*;
 

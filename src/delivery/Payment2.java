@@ -1,4 +1,4 @@
-package delivery;
+package src.delivery;
 
 import java.util.Scanner;
 

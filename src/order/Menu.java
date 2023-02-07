@@ -1,4 +1,4 @@
-package order;
+package src.order;
 
 public class Menu {
     private String fooditems[][] = {

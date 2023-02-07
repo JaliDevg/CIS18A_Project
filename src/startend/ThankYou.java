@@ -1,4 +1,4 @@
-package startend;
+package src.startend;
 public class ThankYou {
     public void greetTy() {
         //Print Thank User for Order

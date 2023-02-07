@@ -1,17 +1,17 @@
 package order;
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class FoodSelect {
     //Constructors for the User's Input
     Scanner scanner = new Scanner(System.in);
     String selectedItem = "";
     String selectedPrice = "";
-    //Utility Package: Array List and List (Reference - https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/ArrayList.html)
+    //Utility Package: Array List (Reference - https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/ArrayList.html)
         //Used to store selceted item(s) and the prices for each selected item(s)
-    List<String> selectedOrders = new ArrayList<>();
-    static List<String> totalPrice = new ArrayList<>();
+    ArrayList<String> selectedOrders = new ArrayList<>();
+    static ArrayList<String> totalPrice = new ArrayList<>();
 
     public void display() {
         //Display Instructions
@@ -123,7 +123,7 @@ public class FoodSelect {
             }
         scanner.close(); 
     }
-    public List<String> getList() {
+    public ArrayList<String> getList() {
         return totalPrice;
     }
 }

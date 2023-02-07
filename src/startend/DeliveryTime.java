@@ -1,12 +1,15 @@
 package src.startend;
+import src.delivery.DatePicker;
 
 public class DeliveryTime extends Welcome {
     public void deliverTime() {
-        if(currentTime.isAfter(am) & currentTime.isBefore(pm)) {
-            System.out.println("Your order will be placed when we open again. Thank you!");  
+        src.delivery.DatePicker appointment = new DatePicker();
+        if(currentTime.isBefore(am) & currentTime.isAfter(pm)) {
+            System.out.println("Your order will be placed when we open again. Thank you!");
+            System.out.println("Your delivery date is: " + appointment);
         }
         else {
-            System.out.println("");
+            System.out.println("Your delivery date is: " + appointment);
         }
     }
 }

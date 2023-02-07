@@ -13,6 +13,7 @@ public class Main {
         startend.ThankYou ty = new ThankYou();
         //Import And Print Methods
         wlc.greetWlc();
+        wlc.checkTime();
         System.out.println();
         menu.menuItems();
         System.out.println();

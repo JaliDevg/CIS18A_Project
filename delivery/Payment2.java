@@ -12,7 +12,7 @@ class UserCard implements CardDetails {
     long cardNumber;
     String cardType;
 
-    public getCardNumber() {
+    public long getCardNumber() {
         System.out.print("Enter 16 digit card number: ");
         cardNumber = scanner.nextLong();
         return cardNumber;
@@ -21,7 +21,7 @@ class UserCard implements CardDetails {
     public String getCardType() {
         System.out.println("Allowed Payment Types:");
         System.out.println("1. Visa\n2. Mastercard\n3. American Express\n4. Discover");
-        System.out.println("- Enter the number next to the desried option to select the card type.");
+        System.out.println("- Enter the number next to the desired option to select the card type.");
         System.out.println("Ex.\n1\nCard Type: Visa");
 
         int cardOption = scanner.nextInt();
@@ -46,16 +46,16 @@ class UserCard implements CardDetails {
     }
 }
 
-public class Payment2 extends UserCard{
+public class Payment2 extends UserCard {
     public static void main(String[] args) {
         UserCard userCard = new UserCard();
         System.out.println();
-        System.out.println("Card type: " + cardType + "Card #:" + cardNumber);
-        CalcTotal totalNTax = new CalcTotal();
-        totalNTax.plusTax();
-        System.out.print("charged to: " + userPay.userCard);
-        System.out.println();
+        userCard.getCardNumber();
+        userCard.getCardType();
+        System.out.println("Card type: " + userCard.cardType + " Card #: " + userCard.cardNumber);
+        //Add total from CalcTotal
         scanner.close();
     }
 }
+
 

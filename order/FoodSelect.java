@@ -8,7 +8,8 @@ public class FoodSelect {
     Scanner scanner = new Scanner(System.in);
     String selectedItem = "";
     String selectedPrice = "";
-    //Util Package: Array List (Reference - https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/ArrayList.html)
+    //Utility Package: Array List and List (Reference - https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/ArrayList.html)
+        //Used to store selceted item(s) and the prices for each selected item(s)
     List<String> selectedOrders = new ArrayList<>();
     static List<String> totalPrice = new ArrayList<>();
 

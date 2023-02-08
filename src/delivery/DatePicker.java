@@ -9,8 +9,11 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+//import Time Check from Welcome text file
+import src.startend.Welcome;
 
-public class DatePicker {
+public class DatePicker extends Welcome {
+    String date;
     public void userDate() {
         //Display date pick instructions
         System.out.println("Delivery Date:");
@@ -27,9 +30,9 @@ public class DatePicker {
         JButton submitButton = new JButton("Submit");
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                String date = dateField.getText();
+                date = dateField.getText();
                 System.out.println("Your delivery date is: " + date);
-                frame.dispose();
+                System.exit(0);
             }
         });
         //Add the label, text field, and button to the frame

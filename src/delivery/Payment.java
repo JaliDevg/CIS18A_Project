@@ -90,6 +90,6 @@ public class Payment extends CardDetails {
         src.order.CalcTotal totPrice = new CalcTotal();
         totPrice.plusTax();
         //Label plus the card information
-        System.out.print(" charged to " + userCardType + cardNums);
+        System.out.print(" charged to " + userCardType + " " + cardNums);
     }
 }

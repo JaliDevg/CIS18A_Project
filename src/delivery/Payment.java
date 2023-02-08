@@ -9,38 +9,47 @@ interface CardNums {
     long nums3();
     long nums4();
 }
+interface CardType {
+    String type();
+}
+
 class UserPayment implements CardNums {
     Scanner scanner = new Scanner(System.in);
-        int cardRead = scanner.nextInt(4);
-        Strinf userCard;
-    nums1(long card1) {
-        card1 = cardRead(4);
-        return card1  + "-";
+    int cardRead = 0;
+    String userCard;
+    public long nums1() {
+        cardRead = scanner.nextInt(4);
+        return cardRead;
     }
-    nums2(long card2) {
-        card2 = cardRead(4);
-        return card2 + "-";
+    public long nums2() {
+        cardRead = scanner.nextInt(4);
+        return cardRead;
     }
-    nums3(long card3) {
-        card3 = cardRead(4);
-        return card3 + "-";
+    public long nums3() {
+        cardRead = scanner.nextInt(4);
+        return cardRead;
     }
-    nums4(long card4) {
-        card4 = cardRead(4);
-        return card4 + "-";
+    public long nums4() {
+        cardRead = scanner.nextInt(4);
+        return cardRead;
     } 
 }
 public class Payment extends UserPayment {
     public void userPayAmt() {
         System.out.print("Enter Card Type Here:");
+        userCard = scanner.nextLine();
 
         System.out.println("Enter Card Number Here: ");
         System.out.println("Ex.\t0000-0000-0000");
         UserPayment userPay = new UserPayment();
-        userCard = userPay.num1() + userPay.num2() + userPay.num3() + userPay.num4();
-        CalcTotal totalNTax = new CalcTotal();
-        totalNTax.plusTax();
-        System.out.println(totalNTax.plusTax() + "charged to: " + userCard);
+        long card1 = userPay.nums1();
+        long card2 = userPay.nums2();
+        long card3 = userPay.nums3();
+        long card4 = userPay.nums4();
+        userCard = card1 + "-" + card2 + "-" + card3 + "-" + card4;
+        src.order.CalcTotal totPrice = new CalcTotal();
+        totPrice.plusTax();
+        System.out.print(" charged to: " + userCard);
         scanner.close();
     }
 }

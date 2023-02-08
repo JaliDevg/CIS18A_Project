@@ -1,6 +1,7 @@
 package src;
 import src.order.*;
 import src.startend.*;
+import src.delivery.*;
 
 public class Main {
     public static void main(String args[]) throws java.io.IOError {
@@ -9,6 +10,7 @@ public class Main {
         src.order.Menu menu = new Menu();
         src.order.FoodSelect select = new FoodSelect(); 
         src.order.CalcTotal totPrice = new CalcTotal();
+        src.delivery.Payment cardPay = new Payment();
         src.startend.DeliveryTime deliTime = new DeliveryTime();
         src.startend.ThankYou ty = new ThankYou();
         //Import and output the Methods from other packages and classes
@@ -24,6 +26,7 @@ public class Main {
         totPrice.displayTax();
         totPrice.plusTax();
         System.out.println();
+        cardPay.userPayAmt();
         deliTime.deliverTime();
         System.out.println();
         ty.greetTy();

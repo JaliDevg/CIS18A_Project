@@ -23,6 +23,7 @@ public class DatePicker {
         System.out.println("- Only Press the 'Submit' button when you are done entering the desired date.");
     }
     public void userDate() {
+        //DISPLAY=localhost:0.0;
         //Create the frame
         JFrame frame = new JFrame("REGULAR RESTAURANT");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

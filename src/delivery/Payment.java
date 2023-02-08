@@ -14,11 +14,13 @@ interface getCardType {
 }
 class CardDetails implements getCardNums, getCardType {
     Scanner scanner = new Scanner(System.in);
+    //Numbers
     int cardRead;
-    String cardNums;
+    String cardAllNums;
+    //Type
     String cardType;
+    //User Enters card option by inputting number
     public String type() {
-        //User Enters card option by inputting number
         int cardOption = scanner.nextInt();
         switch (cardOption) {
             case 1:
@@ -39,20 +41,21 @@ class CardDetails implements getCardNums, getCardType {
         }
         return cardType;
     }
+    //Enter four numbers on each line for card numbers
     public long nums1() {
-        cardRead = scanner.nextInt();
+        int cardRead = scanner.nextInt();
         return cardRead;
     }
     public long nums2() {
-        cardRead = scanner.nextInt();
+        int cardRead = scanner.nextInt();
         return cardRead;
     }
     public long nums3() {
-        cardRead = scanner.nextInt();
+        int cardRead = scanner.nextInt();
         return cardRead;
     }
     public long nums4() {
-        cardRead = scanner.nextInt();
+        int cardRead = scanner.nextInt();
         return cardRead;
     } 
 }
@@ -76,20 +79,20 @@ public class Payment extends CardDetails {
         //Display instructions for user number
         System.out.println();
         System.out.println("Card Number:");
-        System.out.println("- Enter each set of four numbers on each line to get the card number.");
+        System.out.println("- Enter the first set of four numbers, then enter the second set of four numbers, then enter the third set of four numbers, and then enter the last set of four numbers. \n- Each set of four on different lines to correctly input the card number.");
         System.out.println("Enter Card Number Here: ");
         //Procedure for user entering numbers and printing them back later
         long card1 = numDetails.nums1();
         long card2 = numDetails.nums2();
         long card3 = numDetails.nums3();
         long card4 = numDetails.nums4();
-        cardNums = card1 + "-" + card2 + "-" + card3 + "-" + card4;
+        cardAllNums = card1 + "-" + card2 + "-" + card3 + "-" + card4;
     }
     public void chargeDisplay() {
         //Import, run, and output the user's total for the food order
         src.order.CalcTotal totPrice = new CalcTotal();
         totPrice.plusTax();
         //Label plus the card information
-        System.out.print(" charged to " + userCardType + " " + cardNums);
+        System.out.print(" charged to " + userCardType + " " + cardAllNums);
     }
 }

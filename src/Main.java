@@ -35,10 +35,10 @@ public class Main {
         cardPay.chargeDisplay();//Display user's card information
         
         System.out.println();/*Space */
-        deliDate.deliverDate();//Determine when the order will be placed & Swing window pop-up that allows user to pick the date desired to deliver food
-        
-        System.out.println();/*Space */
         userAddress.deliverAddress();//Have the user input the adress where they want the food order to be delivered
+       
+        System.out.println();/*Space */
+        deliDate.deliverDate();//Determine when the order will be placed & Swing window pop-up that allows user to pick the date desired to deliver food
         
         System.out.println();/*Space */
         ty.greetTy();//Outro - Thank user for order

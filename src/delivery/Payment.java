@@ -71,7 +71,7 @@ public class Payment extends CardDetails {
         System.out.println("1. Visa\n2. Mastercard\n3. American Express\n4. Discover");
         System.out.println("- Enter the number next to the desired option to select the card type.");
         System.out.println("Ex.\n1\nCard Type: Visa");
-        System.out.print("Enter Card Type Here:");
+        System.out.print("Enter Card Type Here: ");
         //Procedure for user entering card type and printing back later
         userCardType = typeDetails.type();
         //Display instructions for user number

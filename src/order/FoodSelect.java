@@ -123,7 +123,7 @@ public class FoodSelect {
             }
         scanner.close(); 
     }
-    public ArrayList<String> getList() {
+    protected ArrayList<String> getList() {
         return totalPrice;
     }
 }

@@ -12,45 +12,80 @@ interface getCardNums {
 interface getCardType {
     String type();
 }
-
-class UserPayment implements getCardNums {
+class CardDetails implements getCardNums, getCardType {
     Scanner scanner = new Scanner(System.in);
-    int cardRead = 0;
+    int cardRead;
     String cardNums;
     String cardType;
+    public String type() {
+        System.out.println("Allowed Payment Types:");
+        System.out.println("1. Visa\n2. Mastercard\n3. American Express\n4. Discover");
+        System.out.println("- Enter the number next to the desired option to select the card type.");
+        System.out.println("Ex.\n1\nCard Type: Visa");
+        System.out.println("Enter Card Number Here: ");
+        System.out.println("Ex.\t0000-0000-0000");
+        //User Enters card option by inputting number
+        int cardOption = scanner.nextInt();
+        switch (cardOption) {
+            case 1:
+                cardType = "Visa";
+                break;
+            case 2:
+                cardType = "Mastercard";
+                break;
+            case 3:
+                cardType = "American Express";
+                break;
+            case 4:
+                cardType = "Discover";
+                break;
+            default:
+                cardType = "Invalid option. Try again.";
+                break;
+        }
+        return cardType;
+    }
     public long nums1() {
-        cardRead = scanner.nextInt(4);
+        cardRead = scanner.nextInt();
         return cardRead;
     }
     public long nums2() {
-        cardRead = scanner.nextInt(4);
+        cardRead = scanner.nextInt();
         return cardRead;
     }
     public long nums3() {
-        cardRead = scanner.nextInt(4);
+        cardRead = scanner.nextInt();
         return cardRead;
     }
     public long nums4() {
-        cardRead = scanner.nextInt(4);
+        cardRead = scanner.nextInt();
         return cardRead;
     } 
 }
-public class Payment extends UserPayment {
-    public void userPayAmt() {
+public class Payment extends CardDetails {
+    //Constructors
+        CardDetails numDetails = new CardDetails();
+        CardDetails typeDetails = new CardDetails();
+        String userCardType;
+    public void userCharge() {
+        //Procedure for user entering card type and printing back later
         System.out.print("Enter Card Type Here:");
+        cardType = scanner.nextLine();
+        userCardType = typeDetails.type();
+        //Procedure for user entering numbers and printing them back later
         cardNums = scanner.nextLine();
-
-        System.out.println("Enter Card Number Here: ");
-        System.out.println("Ex.\t0000-0000-0000");
-        UserPayment userPay = new UserPayment();
-        long card1 = userPay.nums1();
-        long card2 = userPay.nums2();
-        long card3 = userPay.nums3();
-        long card4 = userPay.nums4();
+        long card1 = numDetails.nums1();
+        long card2 = numDetails.nums2();
+        long card3 = numDetails.nums3();
+        long card4 = numDetails.nums4();
         cardNums = card1 + "-" + card2 + "-" + card3 + "-" + card4;
+    }
+    public void chargeDisplay() {
+        //Import, run, and output the user's total for the food order
         src.order.CalcTotal totPrice = new CalcTotal();
         totPrice.plusTax();
-        System.out.print(" charged to: " + cardNums);
+        //Label plus the card information
+        System.out.print(" charged to: " + userCardType + " - " + cardNums);
         scanner.close();
     }
 }

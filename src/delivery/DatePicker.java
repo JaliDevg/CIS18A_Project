@@ -1,17 +1,17 @@
 package src.delivery;
-
+//Abstract Window Toolkit imports for GUI
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+//Swing imports for GUI
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class DatePicker {
-    public static void main(String[] args) {
+    public void userDate() {
         // Create the frame
         JFrame frame = new JFrame("Date Input");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -23,7 +23,6 @@ public class DatePicker {
         // Create the submit button
         JButton submitButton = new JButton("Submit");
         submitButton.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 String date = dateField.getText();
                 System.out.println("Entered date: " + date);

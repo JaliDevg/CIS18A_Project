@@ -15,7 +15,7 @@ class Values{
 }
 public class CalcTotal extends Values {
     public void displayTax() {
-        //Display Total
+        //Display Total label
         System.out.print("Total: ");
 
     }

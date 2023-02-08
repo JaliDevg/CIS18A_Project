@@ -1,7 +1,6 @@
 package src.delivery;
 
 import java.util.Scanner;
-
 import src.order.CalcTotal;
 
 interface CardNums {
@@ -12,43 +11,36 @@ interface CardNums {
 }
 class UserPayment implements CardNums {
     Scanner scanner = new Scanner(System.in);
-        long cardRead = scanner.nextInt(4);
-        long userCard;
-    public long cardFormat(long limit) {
-        if(userCard == cardFormat(16)) {
-            scanner.close();
-            System.out.println(userCard);
-        }
-        return limit;
-    }
+        int cardRead = scanner.nextInt(4);
+        Strinf userCard;
     nums1(long card1) {
-        cardFormat(4);
-        userCard = cardRead(card1);
-        return userCard + "-";
+        card1 = cardRead(4);
+        return card1  + "-";
     }
     nums2(long card2) {
-        cardFormat(4);
-        userCard = cardRead(card2);
-        return userCard + "-";
+        card2 = cardRead(4);
+        return card2 + "-";
     }
     nums3(long card3) {
-        cardFormat(4);
-        userCard = cardRead(card3);
-        return userCard + "-";
+        card3 = cardRead(4);
+        return card3 + "-";
     }
     nums4(long card4) {
-        cardFormat(4);
-        userCard = cardRead(card4);
-        return userCard + "-";
+        card4 = cardRead(4);
+        return card4 + "-";
     } 
 }
 public class Payment extends UserPayment {
     public void userPayAmt() {
-        System.out.println("0000-0000-0000");
-        System.out.print("Enter Card Number Here: ");
+        System.out.print("Enter Card Type Here:");
+
+        System.out.println("Enter Card Number Here: ");
+        System.out.println("Ex.\t0000-0000-0000");
         UserPayment userPay = new UserPayment();
+        userCard = userPay.num1() + userPay.num2() + userPay.num3() + userPay.num4();
         CalcTotal totalNTax = new CalcTotal();
         totalNTax.plusTax();
-        System.out.print("charged to: " + userPay.userCard);
+        System.out.println(totalNTax.plusTax() + "charged to: " + userCard);
+        scanner.close();
     }
 }

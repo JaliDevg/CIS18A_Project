@@ -8,7 +8,7 @@
 > (Prompt #1)
 
 ## Description:
-The purpose of this project is to create a delivery service program that would allow the customer to select a food item from the menu and deliver it to the desired address. The user's inputted food order, which should be placed during the restaurant’s business hours, will be displayed back to the user in the order summary. The user will be able to interact with the program through the console during the selection of food items when entering the address, and the payment information used for the order. The user will also be able to pick a delivery date in a pop up window using swing java.
+The overall purpose of this project is to create a delivery service program that would allow the customer to select a food item from the menu and deliver it to the desired address. The user's inputted food order, which should be placed during the restaurant’s business hours, will be displayed back to the user in the order summary. The user will be able to interact with the program through the console during the selection of food items when entering the address, and the payment information used for the order. The user will also be able to pick a delivery date in a pop up window using swing java.
 
 ## Table of Contents:
 1. [Restaurant Logo](#restaurant-logo)

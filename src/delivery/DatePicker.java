@@ -12,9 +12,12 @@ import javax.swing.JTextField;
 
 public class DatePicker {
     public void userDate() {
+        //Display date pick instructions
+        System.out.println("Delivery Date:");
+        System.out.println("- Only Press the 'Submit' button when you are done entering the desired date.");
         //Create the frame
-        JFrame frame = new JFrame("Date Input");
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        JFrame frame = new JFrame("REGULAR RESTAURANT");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new FlowLayout());
         frame.setSize(new Dimension(250, 150));
         //Create the label and text field for the date
@@ -26,6 +29,7 @@ public class DatePicker {
             public void actionPerformed(ActionEvent e) {
                 String date = dateField.getText();
                 System.out.println("Your delivery date is: " + date);
+                frame.dispose();
             }
         });
         //Add the label, text field, and button to the frame

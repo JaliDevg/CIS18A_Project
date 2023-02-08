@@ -67,18 +67,17 @@ public class Payment extends CardDetails {
         //Display instructions for entering card type
         System.out.println();
         System.out.println("Card Type:");
-        System.out.println("\nAllowed Payment Types:");
-        System.out.println("1. Visa\n2. Mastercard\n3. American Express\n4. Discover");
         System.out.println("- Enter the number next to the desired option to select the card type.");
-        System.out.println("Ex.\n1\nCard Type: Visa");
+        System.out.println("Allowed Payment Types:");
+        System.out.println("1. Visa\n2. Mastercard\n3. American Express\n4. Discover");
         System.out.print("Enter Card Type Here: ");
         //Procedure for user entering card type and printing back later
         userCardType = typeDetails.type();
         //Display instructions for user number
         System.out.println();
         System.out.println("Card Number:");
+        System.out.println("- Enter each set of four numbers on each line to get the card number.");
         System.out.println("Enter Card Number Here: ");
-        System.out.println("Ex.\t000000000000");
         //Procedure for user entering numbers and printing them back later
         long card1 = numDetails.nums1();
         long card2 = numDetails.nums2();
@@ -91,6 +90,6 @@ public class Payment extends CardDetails {
         src.order.CalcTotal totPrice = new CalcTotal();
         totPrice.plusTax();
         //Label plus the card information
-        System.out.print(" charged to: " + userCardType + " - " + cardNums);
+        System.out.print(" charged to " + userCardType + cardNums);
     }
 }

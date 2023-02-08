@@ -9,15 +9,20 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-//import Time Check from Welcome text file
-import src.startend.Welcome;
+//import ThankYou and DeliveryDate for outro
+import src.startend.ThankYou;
+import src.startend.DeliveryDate;
 
-public class DatePicker extends Welcome {
+public class DatePicker {
+    src.startend.ThankYou ty = new ThankYou();
+    src.startend.DeliveryDate deliverDateCheck = new DeliveryDate();
     String date;
-    public void userDate() {
+    public void deliDateInstruct() {
         //Display date pick instructions
         System.out.println("Delivery Date:");
         System.out.println("- Only Press the 'Submit' button when you are done entering the desired date.");
+    }
+    public void userDate() {
         //Create the frame
         JFrame frame = new JFrame("REGULAR RESTAURANT");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -31,8 +36,12 @@ public class DatePicker extends Welcome {
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 date = dateField.getText();
+                frame.dispose();
                 System.out.println("Your delivery date is: " + date);
-                System.exit(0);
+                deliverDateCheck.deliverDate();
+                //Embedded Outro
+                System.out.println();
+                ty.outTy();
             }
         });
         //Add the label, text field, and button to the frame

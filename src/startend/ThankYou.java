@@ -1,6 +1,6 @@
 package src.startend;
 public class ThankYou {
-    public void greetTy() {
+    public void outTy() {
         //Print Thank User for Order
         System.out.println("Thank you for your order!");
         System.out.println("Have a great day! :)");

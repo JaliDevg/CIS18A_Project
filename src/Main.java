@@ -12,11 +12,10 @@ public class Main {
         src.order.CalcTotal totPrice = new CalcTotal();
         src.delivery.Payment cardPay = new Payment();
         src.delivery.Address userAddress = new Address();
-        src.startend.DeliveryDate deliDate = new DeliveryDate();
-        src.startend.ThankYou ty = new ThankYou();
+        src.delivery.DatePicker deliverDate = new DatePicker();
         //Import and output the Methods from other packages and classes
             //Inserted space between each method display
-        wlc.greetWlc();//Introduction
+        wlc.outWlc();//Introduction
         wlc.checkTime();//Checks user's time in accordance with business hours
         
         System.out.println();/*Space */
@@ -38,9 +37,10 @@ public class Main {
         userAddress.deliverAddress();//Have the user input the adress where they want the food order to be delivered
        
         System.out.println();/*Space */
-        deliDate.deliverDate();//Determine when the order will be placed & Swing window pop-up that allows user to pick the date desired to deliver food
-        
+        deliverDate.deliDateInstruct();//Displays instructions for picking date for when the order will be delivered
+        deliverDate.userDate();//Determine what date the order will be placed from a Swing window pop-up that allows user to pick the date desired to deliver food
+        //Embedded Outro - Thank user for order
+    
         System.out.println();/*Space */
-        ty.greetTy();//Outro - Thank user for order
     }
 }

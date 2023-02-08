@@ -12,7 +12,7 @@ class UserTime {
     LocalTime pm = LocalTime.of(22, 0);
 }
 public class Welcome extends UserTime {
-    public void greetWlc() {
+    public void outWlc() {
         System.out.println();
         System.out.println("\"REGULAR RESTAURANT\"");
         System.out.println("Business Hours:\nMonday - Sunday: 11 a.m. - 10 p.m.");

@@ -3,20 +3,21 @@ package src.delivery;
 import java.util.Scanner;
 import src.order.CalcTotal;
 
-interface CardNums {
+interface getCardNums {
     long nums1();
     long nums2();
     long nums3();
     long nums4();
 }
-interface CardType {
+interface getCardType {
     String type();
 }
 
-class UserPayment implements CardNums {
+class UserPayment implements getCardNums {
     Scanner scanner = new Scanner(System.in);
     int cardRead = 0;
-    String userCard;
+    String cardNums;
+    String cardType;
     public long nums1() {
         cardRead = scanner.nextInt(4);
         return cardRead;
@@ -37,7 +38,7 @@ class UserPayment implements CardNums {
 public class Payment extends UserPayment {
     public void userPayAmt() {
         System.out.print("Enter Card Type Here:");
-        userCard = scanner.nextLine();
+        cardNums = scanner.nextLine();
 
         System.out.println("Enter Card Number Here: ");
         System.out.println("Ex.\t0000-0000-0000");
@@ -46,10 +47,10 @@ public class Payment extends UserPayment {
         long card2 = userPay.nums2();
         long card3 = userPay.nums3();
         long card4 = userPay.nums4();
-        userCard = card1 + "-" + card2 + "-" + card3 + "-" + card4;
+        cardNums = card1 + "-" + card2 + "-" + card3 + "-" + card4;
         src.order.CalcTotal totPrice = new CalcTotal();
         totPrice.plusTax();
-        System.out.print(" charged to: " + userCard);
+        System.out.print(" charged to: " + cardNums);
         scanner.close();
     }
 }

@@ -25,7 +25,7 @@ public class DatePicker {
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String date = dateField.getText();
-                System.out.println("Entered date: " + date);
+                System.out.println("Your delivery date is: " + date);
             }
         });
         //Add the label, text field, and button to the frame

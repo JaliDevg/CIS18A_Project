@@ -12,6 +12,12 @@ class UserTime {
     LocalTime pm = LocalTime.of(22, 0);
 }
 public class Welcome extends UserTime {
+    public void greetWlc() {
+        System.out.println();
+        System.out.println("\"REGULAR RESTAURANT\"");
+        System.out.println("Business Hours:\nMonday - Sunday: 11 a.m. - 10 p.m.");
+        System.out.println("Welcome!");
+    }
     public void checkTime() {
         System.out.println("Current Time: " + currentTime.format(DateTimeFormatter.ofPattern("hh:mm a")));
         if (currentTime.isBefore(am) & currentTime.isAfter(pm)) {
@@ -21,11 +27,5 @@ public class Welcome extends UserTime {
             System.out.println("We are Open!");
             System.out.println("Place an order To Go:");
         }
-    }
-    public void greetWlc() {
-        System.out.println();
-        System.out.println("\"REGULAR RESTAURANT\"");
-        System.out.println("Business Hours:\nMonday - Sunday: 11 a.m. - 10 p.m.");
-        System.out.println("Welcome!");
     }
 }

@@ -121,7 +121,6 @@ public class FoodSelect {
                 System.out.println(order + " - $" + totalPrice.get(pricePerItem));
                 pricePerItem++;
             }
-        scanner.close(); 
     }
     protected ArrayList<String> getList() {
         return totalPrice;

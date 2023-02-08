@@ -34,7 +34,7 @@ class AddressDetails extends DeliveryLimits implements GetAddress {
 }
 public class Address extends AddressDetails {
     public void deliverAddress() {
-        System.out.println("Insert Delivery Address: ");
+        System.out.println("\nInsert Delivery Address: ");
         int houseNumber = houseNums(5);
         String streetName = streetName();
         String city = city();

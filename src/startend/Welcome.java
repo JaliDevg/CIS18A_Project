@@ -6,12 +6,11 @@ import java.time.format.*;
 
 class UserTime {
     // Constructors
-    LocalTime currentTime = LocalTime.now();
     ZonedDateTime usercurrent = ZonedDateTime.now(ZoneId.of("America/Los_Angeles"));
+    LocalTime currentTime = LocalTime.now();
     LocalTime am = LocalTime.of(11, 0);
     LocalTime pm = LocalTime.of(22, 0);
 }
-
 public class Welcome extends UserTime {
     public void checkTime() {
         System.out.println("Current Time: " + currentTime.format(DateTimeFormatter.ofPattern("hh:mm a")));
@@ -23,7 +22,6 @@ public class Welcome extends UserTime {
             System.out.println("Place an order To Go:");
         }
     }
-
     public void greetWlc() {
         System.out.println();
         System.out.println("\"REGULAR RESTAURANT\"");

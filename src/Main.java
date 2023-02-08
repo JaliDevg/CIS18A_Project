@@ -13,7 +13,7 @@ public class Main {
         src.delivery.Payment cardPay = new Payment();
         src.delivery.DatePicker pickDate = new DatePicker();
         src.delivery.Address userAddress = new Address();
-        src.startend.DeliveryTime deliTime = new DeliveryTime();
+        src.startend.DeliveryDate deliDate = new DeliveryDate();
         src.startend.ThankYou ty = new ThankYou();
         //Import and output the Methods from other packages and classes
             //Inserted space between each method display
@@ -28,10 +28,11 @@ public class Main {
         totPrice.displayTax();//Display Label "Total: "
         totPrice.plusTax();//Outputs user's total with tax and holds value
         System.out.println();/*Space */
-        cardPay.userCharge();//Have user input their card info
+        cardPay.userCharge();//Have user input their card information
+        cardPay.chargeDisplay();//Display user's card information
         pickDate.userDate();//Swing window pop-up that allows user to pick the date desired to deliver food
         userAddress.deliverAddress();//Have the user input where they want the food order to be delivered to
-        deliTime.deliverTime();//Determine when the order will be placed
+        deliDate.deliverDate();//Determine when the order will be placed
         System.out.println();/*Space */
         ty.greetTy();//Outro - Thank user for order
     }

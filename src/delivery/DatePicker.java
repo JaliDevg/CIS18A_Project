@@ -12,15 +12,15 @@ import javax.swing.JTextField;
 
 public class DatePicker {
     public void userDate() {
-        // Create the frame
+        //Create the frame
         JFrame frame = new JFrame("Date Input");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setLayout(new FlowLayout());
         frame.setSize(new Dimension(250, 150));
-        // Create the label and text field for the date
+        //Create the label and text field for the date
         JLabel label = new JLabel("Enter date (MM/DD/YYYY):");
         JTextField dateField = new JTextField(10);
-        // Create the submit button
+        //Create the submit button
         JButton submitButton = new JButton("Submit");
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -28,11 +28,11 @@ public class DatePicker {
                 System.out.println("Entered date: " + date);
             }
         });
-        // Add the label, text field, and button to the frame
+        //Add the label, text field, and button to the frame
         frame.add(label);
         frame.add(dateField);
         frame.add(submitButton);
-        // Show the frame
+        //Show the frame
         frame.setVisible(true);
     }
 }

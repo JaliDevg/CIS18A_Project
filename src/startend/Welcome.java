@@ -10,6 +10,7 @@ class UserTime {
     LocalTime currentTime = LocalTime.now();
     LocalTime am = LocalTime.of(11, 0);
     LocalTime pm = LocalTime.of(22, 0);
+    ZonedDateTime java.time.ZonedDateTime.of(currentTime, "America/Los_Angeles");
 }
 public class Welcome extends UserTime {
     public void outWlc() {
@@ -21,11 +22,13 @@ public class Welcome extends UserTime {
     public void checkTime() {
         System.out.println("Current Time: " + currentTime.format(DateTimeFormatter.ofPattern("hh:mm a")));
         if (currentTime.isBefore(am) & currentTime.isAfter(pm)) {
+            System.out.println("We are Open!");
+            System.out.println("Place an order To Go:");
             System.out.println("Sorry, we are closed.");
             System.out.println("You may still place your order. However it will not be delivered until we open again.");
         } else {
-            System.out.println("We are Open!");
-            System.out.println("Place an order To Go:");
+            System.out.println("Sorry, we are closed.");
+            System.out.println("You may still place your order. However it will not be delivered until we open again.");
         }
     }
 }

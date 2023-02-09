@@ -1,14 +1,19 @@
 package src.delivery;
 
+/*Utility Package: Scanner (References - https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Scanner.html and
+Java A Begineer's Guide Eighth Edition -> page 377)*/
 import java.util.Scanner;
+//Import CalcTotal custom package for how much the card should charge
 import src.order.CalcTotal;
 
+//First interface for card numbers
 interface getCardNums {
     long nums1();
     long nums2();
     long nums3();
     long nums4();
 }
+//Second interface for card type
 interface getCardType {
     String type();
 }
@@ -64,7 +69,6 @@ public class Payment extends CardDetails {
         CardDetails numDetails = new CardDetails();
         CardDetails typeDetails = new CardDetails();
         String userCardType;
-    
     public void userCharge() {
         System.out.println("\nPayment:");
         //Display instructions for entering card type

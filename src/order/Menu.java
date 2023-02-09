@@ -1,5 +1,6 @@
 package src.order;
 
+//Class and methods to display the menu
 public class Menu {
     private String fooditems[][] = {
         //Array of available items

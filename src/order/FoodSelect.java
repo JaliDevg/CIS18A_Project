@@ -1,15 +1,17 @@
 package src.order;
-import java.util.Scanner;
-import java.util.ArrayList;
 
+/*Utility Package: Scanner (References - https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Scanner.html and
+Java A Begineer's Guide Eighth Edition -> page 377)*/
+import java.util.Scanner;
+//Utility Package: Array List (Reference - https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/ArrayList.html)
+import java.util.ArrayList;
 
 public class FoodSelect {
     //Constructors for the User's Input
     Scanner scanner = new Scanner(System.in);
     String selectedItem = "";
     String selectedPrice = "";
-    //Utility Package: Array List (Reference - https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/ArrayList.html)
-        //Used to store selceted item(s) and the prices for each selected item(s)
+    //Used to store selceted item(s) and the prices for each selected item(s)
     ArrayList<String> selectedOrders = new ArrayList<>();
     static ArrayList<String> totalPrice = new ArrayList<>();
 

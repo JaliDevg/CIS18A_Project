@@ -25,8 +25,6 @@ public class Welcome extends UserTime {
         if (currentTime.isAfter(am) & currentTime.isBefore(pm)) {
             System.out.println("We are Open!");
             System.out.println("Place an order To Go:");
-            System.out.println("Sorry, we are closed.");
-            System.out.println("You may still place your order. However it will not be delivered until we open again.");
         } else {
             System.out.println("Sorry, we are closed.");
             System.out.println("You may still place your order. However it will not be delivered until we open again.");

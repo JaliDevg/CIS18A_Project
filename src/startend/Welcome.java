@@ -34,12 +34,14 @@ public class Welcome extends UserTime {
         src.delivery.DatePicker appointment = new DatePicker();
         
         if(currentTime.isAfter(am) & currentTime.isBefore(pm)) {
-            System.out.println("You order was successful!");
             appointment.userDate();
+            System.out.println("You order was successful!");
+            
         }
         else {
-            System.out.println("Your order will be placed when we open again. Thank you!");
             appointment.userDate();
+            System.out.println("Your order will be placed when we open again. Thank you!");
+            
         }
     }
 }

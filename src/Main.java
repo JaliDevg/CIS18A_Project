@@ -39,7 +39,7 @@ public class Main {
         System.out.println();/*Space */
         deliverDate.deliDateInstruct();//Displays instructions for picking date for when the order will be delivered
         deliverDate.userDate();//Determine what date the order will be placed from a Swing window pop-up that allows user to pick the date desired to deliver food
-        //Embedded Outro - Thank user for order
+        //Embedded Outro - Thank user for order & Embedded order status
     
         System.out.println();/*Space */
     }

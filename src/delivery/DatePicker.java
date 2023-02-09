@@ -11,11 +11,11 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 //import ThankYou and DeliveryDate for outro
 import src.startend.ThankYou;
-import src.startend.DeliveryDate;
+import src.startend.Welcome;
 
 public class DatePicker {
     src.startend.ThankYou ty = new ThankYou();
-    src.startend.DeliveryDate deliverDateCheck = new DeliveryDate();
+    src.startend.Welcome deliverDateCheck = new Welcome();
     String date;
     public void deliDateInstruct() {
         //Display date pick instructions
@@ -38,6 +38,7 @@ public class DatePicker {
             public void actionPerformed(ActionEvent e) {
                 date = dateField.getText();
                 frame.dispose();
+                //Embedded Order Status
                 System.out.println("Your delivery date is: " + date);
                 deliverDateCheck.deliverDate();
                 //Embedded Outro

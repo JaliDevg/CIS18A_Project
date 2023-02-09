@@ -3,12 +3,15 @@ package src.startend;
 import src.delivery.DatePicker;
 import java.time.LocalTime;
 import java.time.ZoneId;
+import java.time.format.*;
 
 class UserTime {
     // Constructor
     LocalTime currentTime = LocalTime.now(ZoneId.of("America/Los_Angeles"));
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("h:mm a");
+    String formattedTime = currentTime.format(formatter);
     LocalTime am = LocalTime.of(11, 0);
-        LocalTime pm = LocalTime.of(22, 0);
+    LocalTime pm = LocalTime.of(22, 0);
 }
 public class Welcome extends UserTime {
     public void outWlc() {
@@ -16,7 +19,7 @@ public class Welcome extends UserTime {
         System.out.println("\"REGULAR RESTAURANT\"");
         System.out.println("Business Hours:\nMonday - Sunday: 11 a.m. - 10 p.m.");
         System.out.println("Welcome!");
-        System.out.println("Current Time: " + currentTime);
+        System.out.println("Current Time: " + formattedTime);
     }
     public void checkTime() {
         if (currentTime.isAfter(am) & currentTime.isBefore(pm)) {

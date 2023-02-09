@@ -38,6 +38,7 @@ Monday - Sunday: 11 a.m. - 10 p.m.
 
 
 ### Running the Code:
+> Ensure Java SE 11 or higher is installed. 
 1. Download zipped java files from GitHub repository by clicking on the "Code" button, select local, and "Download Zip".
 2. Open the "CIS18A_Project-master.zip" file and open the "Main.java" into a text editor or an IDE.
 3. Esnure that the files are saved onto computer as '.java' files.
